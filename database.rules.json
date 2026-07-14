@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "users": {
+      "$username": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "public_presence": {
+      ".read": "auth != null",
+      "$username": {
+        ".write": "auth != null"
+      }
+    },
+    "bells": {
+      "$username": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+}
